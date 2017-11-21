@@ -1,0 +1,89 @@
+html {
+    background-image: url(../assets/Background.jpeg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Architects Daughter', cursive;
+}
+.material-icons {
+    color: rgba(0, 0, 0, 0.54);
+}
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+.navbar-fixed {
+    z-index: 9999;
+}
+p.Question {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.tabs .indicator {
+    background-color: cyan;
+}
+.tabs .tab a {
+    color: #000;
+}
+.tabs .tab a:hover,
+.tabs .tab a.active {
+    background-color: transparent;
+    color: cyan;
+}
+.tabs .tab.disabled a,
+.tabs .tab.disabled a:hover {
+    color: rgba(102, 147, 153, 0.7);
+}
+#cf {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin:0 auto;
+
+}
+#cf img {
+    position: absolute;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    
+}
+@keyframes cf3FadeInOut {
+    0% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#cf img.top {
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+.cont{ 
+background-color: white;
+border: 12px solid #ffffff; 
+
+}
+.tab{
+    border: 2px solid #00ffff;
+}
+.slider{
+    width:450px;
+}
+.slider .indicators .indicator-item.active {
+  background-color: cyan;
+}

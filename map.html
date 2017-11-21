@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!-- My StyleSheet-->
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+<style>.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+    }
+    </style>
+    <script>document.addEventListener("DOMContentLoaded", function(){
+	$('.preloader-background').delay(1000).fadeOut('slow');
+	
+	$('.preloader-wrapper')
+		.delay(1000)
+		.fadeOut();
+});</script>
+    </head>
+
+<body>
+    <div class="preloader-background">
+	<div class="preloader-wrapper big active">
+		<div class="spinner-layer spinner-cyan-only">
+			<div class="circle-clipper left">
+				<div class="circle"></div>
+			</div>
+			<div class="gap-patch">
+				<div class="circle"></div>
+			</div>
+			<div class="circle-clipper right">
+				<div class="circle"></div>
+			</div>
+		</div>
+	</div>
+</div>
+    </body>
+<body>
+    <div class="navbar-fixed">
+        <nav class="cyan">
+            <div class="container nav-wrapper"> <a href="home.html" class="brand-logo black-text">Lakes</a> <a href="#" data-activates="mobile-demo" class="button-collapse "><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down black-text black-text">
+                    <li><a class="black-text" href="photo1.html">| Photo Gallery |</a></li>
+                    <li><a class="black-text" href="map.html">| Interactive Map |</a></li>
+                    <li><a class="black-text" href="contact.php">| Contact me? |</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a class="black-text" href="photo1.html">Photo Gallery</a></li>
+                    <li><a class="black-text" href="map.html">Interactive Map</a></li>
+                    <li><a class="black-text" href="contact.php">Contact me?</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div> <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    
+    <div class="container cont">
+    <h1> The Location</h1>
+    <div id="map_container"></div>    
+    <div class="googlemapresponsive" id="map" style="height: 500;width: 1200;"></div>
+    </div>
+    <div class="container cont">
+    <div class="col s12 m6">
+                        <ul class="collapsible collapsible-accordion" data-collapsible="accordion">
+                          <li class="active">
+                            <div class="collapsible-header"><i class="material-icons">question_answer</i>Outdoor GYM</div>
+                            <div class="collapsible-body" style="display: block;">                                 
+                               <div class="col s12 m7">
+                                <div class="card horizontal">
+                                  <div class="card-image slider">
+                                      <ul class="slides">
+                                      <li>
+                                       <img style="width: 450px;" src="assets/38-min.JPG">   
+                                      </li>
+                                      <li>
+                                       <img style="width: 450px;" src="assets/34-min.JPG">   
+                                      </li>
+                                      <li>
+                                       <img style="width: 450px;" src="assets/36-min.JPG">   
+                                      </li>
+                                      </ul>
+                                    
+                                  </div>
+                                  <div class="card-stacked">
+                                    <div class="card-content">
+                                      <p>I am a very simple card. I am good at containing small bits of information about the Outdoor Gym.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="active">
+                            <div class="collapsible-header"><i class="material-icons">question_answer</i>Football Pitch</div>
+                            <div class="collapsible-body" style="display: block;">                               
+                                <div class="col s12 m7">
+                                <div class="card horizontal">
+                                   <div class="card-image slider">
+                                      <ul class="slides">
+                                      <li>
+                                       <img style="width: 450px;" src="assets/73-min.JPG">   
+                                      </li>
+                                      <li>
+                                       <img style="width: 450px;" src="assets/71-min.JPG">   
+                                      </li>
+                                      <li>
+                                       <img style="width: 450px;" src="assets/74-min.JPG">   
+                                      </li>
+                                      </ul>
+                                    </div>
+                                  <div class="card-stacked">
+                                    <div class="card-content">
+                                      <p>I am a very simple card. I am good at containing small bits of information about the Football Pitch.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                            
+                            <li class="active">
+                            <div class="collapsible-header"><i class="material-icons">question_answer</i>Stepping Stones</div>
+                            <div class="collapsible-body" style="display: block;">  
+                                 <div class="col s12 m7">
+                                <div class="card horizontal">
+                                  <div class="card-image slider">
+                                      <ul class="slides">
+                                      <li>
+                                       <img style="width: 450px;" src="assets/67-min.JPG">   
+                                      </li>
+                                      <li>
+                                       <img style="width: 450px;" src="assets/55-min.JPG">   
+                                      </li>
+                                      </ul>
+                                    </div>
+                                  <div class="card-stacked">
+                                    <div class="card-content">
+                                      <p>I am a very simple card. I am good at containing small bits of information about the Stepping Stones.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                                       
+                          </li>
+                            <li class="active">
+                            <div class="collapsible-header"><i class="material-icons">question_answer</i>BMX Track</div>
+                            <div class="collapsible-body" style="display: block;">                               
+                              <div class="col s12 m7">
+                                <div class="card horizontal">
+                                  <div class="card-image slider">
+                                      <ul class="slides">
+                                      <li>
+                                       <img style="width: 450px;" src="assets/118-min.JPG">   
+                                      </li>
+                                      <li>
+                                       <img style="width: 450px;" src="assets/113-min.JPG">   
+                                      </li>
+                                      <li>
+                                       <img style="width: 450px;" src="assets/115-min.JPG">   
+                                      </li>
+                                      </ul>
+                                    </div>
+                                  <div class="card-stacked">
+                                    <div class="card-content">
+                                      <p>I am a very simple card. I am good at containing small bits of information about the BMX Track.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+      
+    </div>
+    
+    
+    
+<style>
+    #map {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 22.25%;
+        padding-top: 250px;
+        position: relative;
+    }
+</style>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwiCWKBQfmDBUxQAm-zEIqkaLWugN7PhM&callback=myMap"></script>
+        <!--Import jQuery before materialize.js-->
+
+    <script>
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+            $('.button-collapse').sideNav({
+                draggable: true
+            , });
+            $('.slider').slider();
+        });
+    </script>
+</body>
+</html>
+
